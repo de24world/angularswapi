@@ -1,0 +1,18 @@
+<div class="card">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Title</th>
+                      <th>Episode_id</th>
+                      <th>Release_date</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let film of sw.films$ | async">
+                      <td>{{film.title}}</td>
+                      <td>{{film.episode_id}}</td>
+                      <td>{{film.release_date}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>     
